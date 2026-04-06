@@ -156,7 +156,7 @@ def delete_task(todo_id):
         return jsonify({"message": "Todo not found"}), 404
 
     db.session.delete(todo)
-    # db.session.commit()
+    db.session.commit()
 
     return jsonify({}), 204
 

@@ -18,7 +18,7 @@ services:
       - key: DEBUG
         value: TRUE
       - key: PYTHON_VERSION
-        value: 3.10.6
+        value: 3.13
       - key: DATABASE_URL # Render PostgreSQL database
         fromDatabase:
           name: flask-rest-42170
